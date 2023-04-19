@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Zay shop</title>
+</head>
+
+<body>
+
+
+    <!-- social section -->
+    <section class="container-fluid bg-dark py-2 d-none d-lg-block text-light" id="social">
+        <div class="container">
+            <div class="d-flex justify-content-between">
+                <div class="d-flex gap-2">
+                    <div>
+                        <i class="fa fa-envelope mx-2 fa-xs"></i>
+                        <a class="text-decoration-none fa-xs fw-light"
+                            href="mailto:info@company.com">info@company.com</a>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone mx-1 fa-xs fa-rotate-270"></i>
+                        <a class="text-decoration-none fa-xs fw-light" href="tel:010-020-0340">010-020-0340</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="https://fb.com/templatemo" target="_blank" rel="sponsored"><i
+                            class="fab fa-facebook-f fa-xs fa-fw me-2"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank"><i
+                            class="fab fa-instagram fa-xs fa-fw me-2"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-xs fa-fw me-2"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin fa-xs fa-fw"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- social section -->
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg shadow">
+        <div class="container">
+            <a href="index.html" class="navbar-brand text-success">Zay</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+                aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between" id="navbar">
+                <div class="flex-fill">
+                    <ul class="navbar-nav justify-content-center">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row pe-3">
+                    <div class="col-lg-auto col-md-10 col-8 d-lg-none">
+                        <div class="input-group my-3">
+                            <input type="text" class="form-control rounded-0" placeholder="Search..."
+                                aria-label="Recipient's username" aria-describedby="basic-addon2">
+                            <span class="input-group-text" id="basic-addon2"><i
+                                    class="fa fa-fw fa-search text-dark"></i></span>
+                        </div>
+                    </div>
+                    <div class="col d-flex gap-lg-4 align-items-center gap-4 px-0">
+                        <!-- modal -->
+                        <div data-bs-toggle="modal" data-bs-target="#exampleModal" class="cursor d-none d-lg-block">
+                            <i class="fa fa-fw fa-search text-dark"></i>
+                        </div>
+                        <!-- modal -->
+                        <div class="position-relative">
+                            <i class="fa fa-fw fa-cart-arrow-down text-dark"></i>
+                            <span
+                                class="position-absolute top-0 left-100 translate-middle badge rounded-pill text-dark bg-light">7</span>
+                        </div>
+                        <div class="position-relative">
+                            <i class="fa fa-fw fa-user text-dark"></i>
+                            <span
+                                class="position-absolute top-0 left-100 translate-middle badge rounded-pill text-dark bg-light">+99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+
+    <!--calling model when click on modal  -->
+    <div class="modal fade bg-white" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="w-100 pt-1 mb-5 text-right">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="" method="get" class="modal-content modal-body border-0 p-0">
+                <div class="input-group mb-2">
+                    <input type="text" class="form-control" id="inputModalSearch" name="q" placeholder="Search ...">
+                    <button type="submit" class="input-group-text bg-success text-light">
+                        <i class="fa fa-fw fa-search text-white"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--calling model when click on modal  -->
+
+    <section class="container py-5">
+        <div class="row">
+            <div class="col-lg-3">
+                <h2 class="h2">Categories</h2>
+                <div class="accordion accordion-flush" id="shop-accordion">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed ps-0 h3 fw-light pb-0" type="button"
+                                data-bs-toggle="collapse" data-bs-target="#shop-accordion-1" aria-expanded="false"
+                                aria-controls="shop-#shop-accordion-1">
+                                Gender
+                            </button>
+                        </h2>
+                        <div id="shop-accordion-1" class="accordion-collapse collapse" data-bs-parent="#shop-accordion">
+                            <div class="accordion-body py-0 ps-0">
+                                <ul class="list-unstyled">
+                                    <li>Men</li>
+                                    <li>Woman</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item border-0">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed ps-0 h3 fw-light pb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#shop-accordion-2" aria-expanded="false"
+                                    aria-controls="shop-accordion-2">
+                                    Sale
+                                </button>
+                            </h2>
+                            <div id="shop-accordion-2" class="accordion-collapse collapse"
+                                data-bs-parent="#shop-accordion">
+                                <div class="accordion-body py-0 ps-0">
+                                    <ul class="list-unstyled">
+                                        <li>Sport</li>
+                                        <li>Luxury</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed ps-0 h3 fw-light pb-0" type="button"
+                                    data-bs-toggle="collapse" data-bs-target="#shop-accordion-3" aria-expanded="false"
+                                    aria-controls="shop-accordion-3">
+                                    Product
+                                </button>
+                            </h2>
+                            <div id="shop-accordion-3" class="accordion-collapse collapse"
+                                data-bs-parent="#shop-accordion">
+                                <div class="accordion-body py-0 ps-0">
+                                    <ul class="list-unstyled">
+                                        <li>Bag</li>
+                                        <li>Sweather</li>
+                                        <li>Sunglass</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-inline pt-1">
+                            <li class="list-inline-item h3">All</li>
+                            <li class="list-inline-item h3">Men's</li>
+                            <li class="list-inline-item h3">Women's</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 pb-4">
+                        <select class="form-control">
+                            <option>Featured</option>
+                            <option>A to Z</option>
+                            <option>Item</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- card section -->
+                <div class="row row-cols-md-3 row-cols-auto gy-4">
+                    <!--  card 1 -->
+                    <div class="col">
+                        <div class="card rounded-0 shadow">
+                            <div class="card-img">
+                                <img src="assets/images/shop_01.webp" class="card-img-top rounded-0 img-fluid"
+                                    alt="...">
+                                <div class="shop-card-overlay">
+                                    <ul
+                                        class="list-unstyled d-flex flex-column justify-content-center align-items-center h-100 gap-2">
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-heart text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-eye text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="fas fa-cart-plus text-white"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="m-0">Oupidatat non</p>
+                                <p class="m-0">M/L/X/XL</p>
+                                <p class="text-center m-0">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </p>
+                                <p class="m-0 text-center">$250.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  card 1 -->
+                    <!--  card 2 -->
+                    <div class="col">
+                        <div class="card rounded-0 shadow">
+                            <div class="card-img">
+                                <img src="assets/images/shop_02.webp" class="card-img-top rounded-0 img-fluid"
+                                    alt="...">
+                                <div class="shop-card-overlay">
+                                    <ul
+                                        class="list-unstyled d-flex flex-column justify-content-center align-items-center h-100 gap-2">
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-heart text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-eye text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="fas fa-cart-plus text-white"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="m-0">Oupidatat non</p>
+                                <p class="m-0">M/L/X/XL</p>
+                                <p class="text-center m-0">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </p>
+                                <p class="m-0 text-center">$250.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  card 2 -->
+                    <!--  card 3 -->
+                    <div class="col">
+                        <div class="card rounded-0 shadow">
+                            <div class="card-img">
+                                <img src="assets/images/shop_03.webp" class="card-img-top rounded-0 img-fluid"
+                                    alt="...">
+                                <div class="shop-card-overlay">
+                                    <ul
+                                        class="list-unstyled d-flex flex-column justify-content-center align-items-center h-100 gap-2">
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-heart text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-eye text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="fas fa-cart-plus text-white"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="m-0">Oupidatat non</p>
+                                <p class="m-0">M/L/X/XL</p>
+                                <p class="text-center m-0">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </p>
+                                <p class="m-0 text-center">$250.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 3 -->
+                    <!--  card 4 -->
+                    <div class="col">
+                        <div class="card rounded-0 shadow">
+                            <div class="card-img">
+                                <img src="assets/images/shop_04.webp" class="card-img-top rounded-0 img-fluid"
+                                    alt="...">
+                                <div class="shop-card-overlay">
+                                    <ul
+                                        class="list-unstyled d-flex flex-column justify-content-center align-items-center h-100 gap-2">
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-heart text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-eye text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="fas fa-cart-plus text-white"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="m-0">Oupidatat non</p>
+                                <p class="m-0">M/L/X/XL</p>
+                                <p class="text-center m-0">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </p>
+                                <p class="m-0 text-center">$250.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 4 -->
+                    <!-- card 5 -->
+                    <div class="col">
+                        <div class="card rounded-0 shadow">
+                            <div class="card-img">
+                                <img src="assets/images/shop_05.webp" class="card-img-top rounded-0 img-fluid"
+                                    alt="...">
+                                <div class="shop-card-overlay">
+                                    <ul
+                                        class="list-unstyled d-flex flex-column justify-content-center align-items-center h-100 gap-2">
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-heart text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-eye text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="fas fa-cart-plus text-white"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="m-0">Oupidatat non</p>
+                                <p class="m-0">M/L/X/XL</p>
+                                <p class="text-center m-0">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </p>
+                                <p class="m-0 text-center">$250.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 5 -->
+                    <!-- card 6 -->
+                    <div class="col">
+                        <div class="card rounded-0 shadow">
+                            <div class="card-img">
+                                <img src="assets/images/shop_06.webp" class="card-img-top rounded-0 img-fluid"
+                                    alt="...">
+                                <div class="shop-card-overlay">
+                                    <ul
+                                        class="list-unstyled d-flex flex-column justify-content-center align-items-center h-100 gap-2">
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-heart text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-eye text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="fas fa-cart-plus text-white"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="m-0">Oupidatat non</p>
+                                <p class="m-0">M/L/X/XL</p>
+                                <p class="text-center m-0">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </p>
+                                <p class="m-0 text-center">$250.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 6 -->
+                    <!-- card 7 -->
+                    <div class="col">
+                        <div class="card rounded-0 shadow">
+                            <div class="card-img">
+                                <img src="assets/images/shop_07.webp" class="card-img-top rounded-0 img-fluid"
+                                    alt="...">
+                                <div class="shop-card-overlay">
+                                    <ul
+                                        class="list-unstyled d-flex flex-column justify-content-center align-items-center h-100 gap-2">
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-heart text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-eye text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="fas fa-cart-plus text-white"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="m-0">Oupidatat non</p>
+                                <p class="m-0">M/L/X/XL</p>
+                                <p class="text-center m-0">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </p>
+                                <p class="m-0 text-center">$250.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 7 -->
+                    <!-- card 8 -->
+                    <div class="col">
+                        <div class="card rounded-0 shadow">
+                            <div class="card-img">
+                                <img src="assets/images/shop_08.webp" class="card-img-top rounded-0 img-fluid"
+                                    alt="...">
+                                <div class="shop-card-overlay">
+                                    <ul
+                                        class="list-unstyled d-flex flex-column justify-content-center align-items-center h-100 gap-2">
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-heart text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-eye text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="fas fa-cart-plus text-white"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="m-0">Oupidatat non</p>
+                                <p class="m-0">M/L/X/XL</p>
+                                <p class="text-center m-0">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </p>
+                                <p class="m-0 text-center">$250.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 8 -->
+                    <!-- card 9 -->
+                    <div class="col">
+                        <div class="card rounded-0 shadow">
+                            <div class="card-img">
+                                <img src="assets/images/shop_09.webp" class="card-img-top rounded-0 img-fluid"
+                                    alt="...">
+                                <div class="shop-card-overlay">
+                                    <ul
+                                        class="list-unstyled d-flex flex-column justify-content-center align-items-center h-100 gap-2">
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-heart text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="far fa-eye text-white"></i>
+                                        </li>
+                                        <li class="btn-success px-2 py-1 bordeer border-2">
+                                            <i class="fas fa-cart-plus text-white"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="m-0">Oupidatat non</p>
+                                <p class="m-0">M/L/X/XL</p>
+                                <p class="text-center m-0">
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-warning fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                    <i class="text-muted fa fa-star"></i>
+                                </p>
+                                <p class="m-0 text-center">$250.00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- card 9 -->
+                </div>
+                <!-- card section -->
+                <div class="row pt-4">
+                    <div class="col">
+                        <ul class="justify-content-end pagination pagination-lg">
+                            <li class="page-item rounded-0" aria-current="page">
+                                <a href="#" class="page-link text-white  pagination-color rounded-0">1</a>
+                            </li>
+                            <li class="page-item rounded-0">
+                                <a href="#" class="page-link rounded-0">2</a>
+                            </li>
+                            <li class="page-item rounded-0">
+                                <a href="#" class="page-link rounded-0">3</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container my-4">
+            <div class="row text-center justify-content-center py-3">
+                <!-- brand carousel heading -->
+                <h2 class="h1">Our Brands</h2>
+                <div class="col-lg-6">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod Lorem ipsum dolor sit
+                        amet. </p>
+                </div>
+                <!-- brand carousel heading -->
+                <!-- brand carousel -->
+                <div class="col-lg-8 col-10">
+                    <div class="container">
+                        <div class="row">
+                            <div id="brand-carousel" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <!-- slide 1 -->
+                                    <div class="carousel-item active">
+                                        <div class="row justify-content-center">
+                                            <div class="col-3 p-md-5">
+                                                <img src="assets/images/brand_01.webp" alt=""
+                                                    class="img-fluid brand-img">
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <img src="assets/images/brand_02.webp" alt=""
+                                                    class="img-fluid brand-img">
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <img src="assets/images/brand_03.webp" alt=""
+                                                    class="img-fluid brand-img">
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <img src="assets/images/brand_04.webp" alt=""
+                                                    class="img-fluid brand-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide 1 -->
+                                    <!-- slide 2 -->
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-center">
+                                            <div class="col-3 p-md-5">
+                                                <img src="assets/images/brand_01.webp" alt=""
+                                                    class="img-fluid brand-img">
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <img src="assets/images/brand_02.webp" alt=""
+                                                    class="img-fluid brand-img">
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <img src="assets/images/brand_03.webp" alt=""
+                                                    class="img-fluid brand-img">
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <img src="assets/images/brand_04.webp" alt=""
+                                                    class="img-fluid brand-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide 2 -->
+                                    <!-- slide 3 -->
+                                    <div class="carousel-item">
+                                        <div class="row justify-content-center">
+                                            <div class="col-3 p-md-5">
+                                                <img src="assets/images/brand_01.webp" alt=""
+                                                    class="img-fluid brand-img">
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <img src="assets/images/brand_02.webp" alt=""
+                                                    class="img-fluid brand-img">
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <img src="assets/images/brand_03.webp" alt=""
+                                                    class="img-fluid brand-img">
+                                            </div>
+                                            <div class="col-3 p-md-5">
+                                                <img src="assets/images/brand_04.webp" alt=""
+                                                    class="img-fluid brand-img">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slide 3 -->
+                                </div>
+                                <!-- carousel prev buttons -->
+                                <button class="carousel-control-prev w-auto" type="button"
+                                    data-bs-target="#brand-carousel" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                                        <i class="text-light fas fa-chevron-left"></i>
+                                    </span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <!-- carousel prev buttons -->
+                                <!-- carousel next buttons -->
+                                <button class="carousel-control-next w-auto" type="button"
+                                    data-bs-target="#brand-carousel" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true">
+                                        <i class="text-light fas fa-chevron-right"></i>
+                                    </span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                                <!-- carousel next buttons -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- brand carousel -->
+    </section>
+
+
+
+
+    <!-- footer -->
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row row-cols-md-3 row-cols-1 footer-list">
+                <!-- footer col 1 -->
+                <div class="col pt-5">
+                    <h2 class="text-success border-bottom pb-3 border-light fw-medium border-opacity-10">Zay Shop</h2>
+                    <ul class="list-unstyled">
+                        <li class="text-light">
+                            <i class="fas fa-map-marker-alt fa-fw"></i>
+                            123 Consectetur at ligula 10660
+                        </li>
+                        <li class="text-light">
+                            <i class="fa fa-phone fa-fw fa-rotate-270"></i>
+                            <a class="text-decoration-none text-light" href="tel:010-020-0340">010-020-0340</a>
+                        </li>
+                        <li class="text-light">
+                            <i class="fa fa-envelope fa-fw"></i>
+                            <a class="text-decoration-none text-light"
+                                href="mailto:info@company.com">info@company.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- footer col 1 -->
+                <!-- footer col 2 -->
+                <div class="col pt-5">
+                    <h2 class="border-bottom pb-3 border-light border-opacity-10 text-light">Products</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-light text-decoration-none">Luxury</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light text-decoration-none">Sport Wear</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light text-decoration-none">Men's Shoes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light text-decoration-none">Women's Shoes</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light text-decoration-none">Popular Dress</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light text-decoration-none">Gym Accessories</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light text-decoration-none">Sport Shoes</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- footer col 2 -->
+                <!-- footer col 3 -->
+                <div class="col pt-5">
+                    <h2 class="border-bottom pb-3 border-light border-opacity-10 text-light">Further Info</h2>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="text-light text-decoration-none">Home</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light text-decoration-none">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light text-decoration-none">Shop Locations</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light text-decoration-none">FAQs</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-light text-decoration-none">Contact</a>
+                        </li>
+                        <li>
+                    </ul>
+                </div>
+                <!-- footer col 3 -->
+            </div>
+            <!-- footer 2nd row -->
+            <div class="row pb-4 justify-content-between">
+                <div class="col-12">
+                    <div class=" border-top border-light border-opacity-10 w-100 my-3"></div>
+                </div>
+                <div class="col-auto footer-icon">
+                    <ul class="list-inline ">
+                        <!-- facebook icon -->
+                        <li
+                            class="list-inline-item border border-light rounded-circle rounded-5 border-opacity-10 text-center  p-2">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/">
+                                <i class="fab fa-facebook-f fa-lg fa-fw "></i>
+                            </a>
+                        </li>
+                        <!-- facebook icon -->
+                        <!-- instagram icon -->
+                        <li
+                            class="list-inline-item border border-light rounded-circle rounded-5 border-opacity-10 p-2 text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/">
+                                <i class="fab fa-instagram fa-lg fa-fw"></i>
+                            </a>
+                        </li>
+                        <!-- instagram icon -->
+                        <!-- twitter icon -->
+                        <li
+                            class="list-inline-item border border-light rounded-circle rounded-5 border-opacity-10 p-2 text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/">
+                                <i class="fab fa-twitter fa-lg fa-fw"></i>
+                            </a>
+                        </li>
+                        <!-- twitter icon -->
+                        <!-- linkedin icon -->
+                        <li
+                            class="list-inline-item border border-light rounded-circle rounded-5 border-opacity-10 p-2 text-center">
+                            <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/">
+                                <i class="fab fa-linkedin fa-lg fa-fw"></i>
+                            </a>
+                        </li>
+                        <!-- linkedin icon -->
+                    </ul>
+                </div>
+                <!-- footer email address section -->
+                <div class="col-auto">
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control rounded-1" placeholder="Email address">
+                        <span class="input-group-text btn-success text-light fw-light"
+                            id="basic-addon2">Subscribe</span>
+                    </div>
+                </div>
+                <!-- footer email address section -->
+            </div>
+            <!-- footer 2nd row -->
+        </div>
+        <div class="bg-black py-3">
+            <div class="container">
+                <div class="row pt-2">
+                    <div class="col-12 text-light copyright">
+                        <p>Copyright © 2021 Company Name | Designed by <a href="#" class="text-light">TemplateMo</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+
+
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

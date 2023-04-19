@@ -1,0 +1,268 @@
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/* global css properties */
+.text-muted,
+footer input::placeholder {
+  color: #bcbcbc !important;
+}
+
+.text-warning {
+  color: #ede861 !important;
+}
+
+.bg-light {
+  background-color: #e9eef5 !important;
+}
+
+.bg-dark {
+  background-color: #212934 !important;
+}
+
+.bg-black {
+  background-color: #1d242d !important;
+}
+
+.bg-success {
+  background-color: #59ab6e !important;
+}
+
+.text-light,
+#social a {
+  color: #cfd6e1 !important;
+}
+
+.btn-success {
+  background-color: #59ab6e !important;
+  border-color: #56ae6c !important;
+}
+
+.text-success,
+.nav-link:hover,
+#intro-carousel .carousel-indicators [data-bs-target],
+.footer-list a:hover,
+.copyright a:hover {
+  color: #59ab6e !important;
+}
+
+.h1 {
+  font-size: 3rem !important;
+  font-weight: 200 !important;
+}
+
+.h2 {
+  font-size: 1.875rem !important;
+  font-weight: 300 !important;
+}
+
+.h3 {
+  font-size: 1.375rem !important;
+}
+
+p,
+input,
+li,
+span,label {
+  font-size: 18px !important;
+  font-weight: 300 !important;
+}
+/* global css properties */
+
+/* navbar css */
+.navbar-brand {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+.navbar-nav {
+  gap: 6rem;
+}
+
+.nav-link,
+nav i {
+  color: #212934;
+}
+
+nav span {
+  font-size: 0.75em !important;
+  font-weight: 700 !important;
+}
+/* navbar css */
+
+/* modal css */
+.cursor {
+  cursor: pointer;
+}
+
+/* modal css */
+
+/* intro carousel */
+#intro-carousel {
+  background-color: #efefef;
+}
+
+#intro-carousel .carousel-indicators [data-bs-target] {
+  background-color: #59ab6e !important;
+}
+
+#intro-carousel .carousel-control-prev-icon,
+#intro-carousel .carousel-control-next-icon {
+  background-image: none;
+}
+
+#intro-carousel i {
+  color: #59ab6e;
+  font-size: 2.8em;
+}
+/* intro carousel */
+
+/* footer css */
+footer li {
+  padding-top: 10px;
+}
+
+footer input {
+  background-color: inherit !important;
+  border-color: #2d343f !important;
+}
+
+.footer-icon ul li:hover {
+  background-color: #cfd6e1;
+  transition: 0.5s;
+}
+
+.footer-icon li:hover i {
+  color: #212934 !important;
+  transition: 0.5s;
+}
+
+/* footer css */
+
+/* about page css */
+#about-us h2 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+/* about page services section css */
+.services {
+  transition: 0.3s;
+}
+
+.services:hover {
+  background-color: #69bb7e;
+}
+
+.services:hover i,
+.services:hover h5 {
+  color: #fff;
+}
+/* about page services section css */
+
+/* about page brand carousel section css */
+.brand-img {
+  filter: grayscale(100%);
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.brand-img:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+}
+
+#brand-carousel .carousel-control-prev {
+  left: -45px;
+}
+
+#brand-carousel .carousel-control-next {
+  right: -45px;
+}
+
+#brand-carousel .carousel-control-prev-icon,
+#brand-carousel .carousel-control-next-icon {
+  background-image: none;
+}
+
+#brand-carousel .carousel-control-next,
+#brand-carousel .carousel-control-prev {
+  opacity: 1;
+}
+
+/* about page brand carousel section css */
+
+/* about  page css */
+
+/* shop page css */
+
+/* shop accordion css */
+#shop-accordion .accordion-button:focus {
+  box-shadow: none;
+}
+
+#shop-accordion .accordion-button::after {
+  background-image: url(../images/chevron-circle-down-3-32.png);
+}
+
+#shop-accordion .accordion-button:not(.collapsed)::after {
+  background-image: url(../images/chevron-circle-down-3-32.png);
+}
+
+#shop-accordion .accordion-button:not(.collapsed) {
+  background-color: white !important;
+  color: black !important;
+  border-color: white !important;
+  box-shadow: none;
+}
+/* shop accordion css */
+
+/* shop cards css */
+.card-img {
+  position: relative;
+}
+
+.card .shop-card-overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  display: none;
+}
+
+.card:hover .shop-card-overlay {
+  display: block;
+}
+
+.page-link {
+  background-color: none !important;
+}
+
+.pagination-color {
+  background-color: #69bb7e;
+  border-color: #69bb7e;
+}
+
+.page-link:hover {
+  background-color: #69bb7e;
+  border-color: #69bb7e;
+  color: white;
+}
+
+/* shop cards css */
+
+/* shop page css */
+
+@media (max-width: 992px) {
+  .navbar-nav {
+    gap: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  #intro-carousel .p-5 {
+    padding: 2rem !important;
+  }
+}
